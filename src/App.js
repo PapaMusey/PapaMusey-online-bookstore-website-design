@@ -1,10 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
-import Nav from './Nav.js';
-import BottomNav from './BottomNav.js';
-import Login from './Login.js';
-import Home from './Home.js';
-
+import Nav from './components/Nav.js';
+import BottomNav from './components/BottomNav.js';
+import Login from './components/Login.js';
+import Home from './components/Home.js';
+import Icons from './components/Icons.js';
+import Featured from './components/Featured.js';
+import Newsletter from './components/Newsletter.js';
+import Arrivals from './components/Arrivals.js';
 
 function App() {
   return (
@@ -13,6 +16,10 @@ function App() {
       <BottomNav />
       <Login />
       <Home />
+      <Icons />
+      <Featured />
+      <Newsletter />
+      <Arrivals />
     </>
   );
 }

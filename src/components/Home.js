@@ -1,6 +1,11 @@
 import React from 'react'
+// import { Swiper, SwiperSlide } from 'swiper/react';
+// import 'swiper/swiper-bundle.min.css';
+
 
 export default function Home() {
+
+   
   return (
     <section id='home' className='home'>
             <div className='row'>
@@ -15,6 +20,20 @@ export default function Home() {
             <button>Show Now</button>
         </div>
 
+        {/* <Swiper
+      spaceBetween={50} // Space between slides in px
+      slidesPerView={1} // Number of slides per view
+      loop={true}       // Infinite loop mode
+      pagination={{ clickable: true }} // Add pagination dots
+      navigation       // Add navigation buttons (requires Swiper styles)
+    >
+        <SwiperSlide></SwiperSlide>
+        <SwiperSlide></SwiperSlide>
+        <SwiperSlide></SwiperSlide>
+        <SwiperSlide></SwiperSlide>
+        <SwiperSlide></SwiperSlide>
+        <SwiperSlide></SwiperSlide>
+    </Swiper> */}
         <div className='books-slider'>
             <div className='wrapper'>
             <a href='#'><img src='image/book-1.png' alt='' /></a>
