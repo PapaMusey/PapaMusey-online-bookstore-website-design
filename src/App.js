@@ -8,6 +8,8 @@ import Icons from './components/Icons.js';
 import Featured from './components/Featured.js';
 import Newsletter from './components/Newsletter.js';
 import Arrivals from './components/Arrivals.js';
+import Deal from './components/Deal.js';
+
 
 function App() {
   return (
@@ -20,6 +22,7 @@ function App() {
       <Featured />
       <Newsletter />
       <Arrivals />
+      <Deal />
     </>
   );
 }
