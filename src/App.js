@@ -9,6 +9,10 @@ import Featured from './components/Featured.js';
 import Newsletter from './components/Newsletter.js';
 import Arrivals from './components/Arrivals.js';
 import Deal from './components/Deal.js';
+import Reviews from './components/Reviews.js'
+import Blog from './components/Blog.js';
+import Footer from './components/Footer.js';
+import Loader from './components/Loader.js';
 
 
 function App() {
@@ -23,6 +27,10 @@ function App() {
       <Newsletter />
       <Arrivals />
       <Deal />
+      <Reviews />
+      <Blog />
+      <Footer />
+      <Loader />
     </>
   );
 }
