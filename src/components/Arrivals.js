@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Arrivals() {
   return (
-    <section className='arrivals'>
+    <section className='arrivals' id="arrivals">
         <h1 className='heading'>
             <span>New Arrivals</span>
         </h1>

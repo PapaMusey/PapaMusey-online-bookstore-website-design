@@ -14,8 +14,8 @@ export default function Icons() {
             <div className='icons'>
                 <i className='fas fa-lock'> </i>
                 <div className='content'>
-                <h3>Free Shipping</h3>
-                <p>Order over $100</p>
+                <h3>Secure Payment</h3>
+                <p>100% Secure Payment</p>
                 </div>
             </div>
             <div className='icons'>

@@ -63,7 +63,8 @@ export default function Nav() {
                     id='search-btn' className= "fas fa-search"></div>
                     <a href='#' className='fas fa-heart'></a>
                     <a href='#' className='fas fa-shopping-cart'></a>
-                    <div id='log-in button' className='fas fa-user'></div>
+                    <div id='log-in button' className='fas fa-user' ></div>
+                    {/* onClickLogin must be here */}
                 </div>
 
             </div>
