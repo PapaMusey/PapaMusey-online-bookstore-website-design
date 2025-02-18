@@ -19,6 +19,7 @@ code {
   --black: #444;
   --light-color: #666;
   --border: .1rem solid rgba(0, 0, 0, .1);
+  --border-hover: .1rem solid var(--black);
   --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 1);
 }
 
@@ -399,7 +400,7 @@ form button:hover {
   margin: 2rem 0;
   position: relative;
   overflow: hidden;
-  border: var(--border);
+  border:var(--border);
   text-align: center;
 }
 
@@ -408,7 +409,7 @@ form button:hover {
 }
 
 .featured .featured-slider .box:hover .image {
-  transform: translateY(6rem);
+   /* transform: translateY(6rem); */
 }
 
 .featured .featured-slider .box image {
@@ -416,7 +417,7 @@ form button:hover {
   background: linear-gradient(15deg, #eee 30%, #fff 30.1%);
 }
 
-.featured .featured-slider .box image img {
+.featured .featured-slider .box .image img {
   height: 25rem;
 }
 
@@ -428,10 +429,10 @@ form button:hover {
   left: 0;
   background: #fff;
   z-index: 1;
-  transform: translateY(-105%);
+  transform: translateY(-100%);
 }
 
-.featured .featured-slider .box .icons:hover {
+.featured .featured-slider .box:hover .icons {
   transform: translateY(0%);
 }
 
