@@ -16,7 +16,7 @@ export default function FeaturedBook({featuredbookImage, discountedPrice, realPr
                     <div className='content'>
                         <h3>Featured books</h3>
                         <div className='price'>{discountedPrice} <span>{realPrice}</span></div>
-                        <a href='#' className='btn'>Add to cart</a>
+                        <button>Add to cart</button>
                     </div>
                 </div>
             </div>

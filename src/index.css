@@ -311,7 +311,6 @@ form button:hover {
 
 
 .home {
-  /* background: url(../image/banner-bg.jpg) no repeat; */
   background-size: cover;
   background-position: center;
 }
@@ -321,49 +320,56 @@ form button:hover {
   align-items: center;
   flex-wrap: wrap;
   gap: 1.5rem;
+  justify-content: space-between;
 }
 
-.home .row .content {
+.home .row .content{
   flex: 1 1 42rem;
+  font-size: 1.6rem;
 }
+.home .row .content h3{
+  font-size: 2.2rem;
+ }
+
+.home .row .content p{
+ color: #666;
+ font-size: 1.6rem;
+}
+
 
 .home .row .books-slider {
   flex: 1 1 42rem;
-  text-align: center;
+  display: flex;
+  justify-content: center; /* Centers the Swiper */
+  align-items: center;
   margin-top: 2rem;
+  max-width: 100%;
 }
 
-.home .row .books-slider a img{
-  height: 25rem;
-}
-
-.home .row .books-slider a:hover img{
- transform: scale(.9);
-}
-
-.books-slider .wrapper img {
-  width: 150px; 
-  height: 230px; 
-  object-fit: cover; 
-  border-radius: 5px; 
-  margin: 3rem;
-}
-
-.home .row .book-slider .stand {
+/* Ensure Swiper container does not cause overflow */
+.books-slider .swiper {
   width: 100%;
-  margin-top: -2rem;
+  max-width: 600px; /* Adjust based on layout */
 }
 
-.home .row .content h3 {
-  color: var(--black);
-  font-size: 4.5rem;
+.books-slider img {
+  height: 25rem;
+  width: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
 }
 
-.home .row .content p{
-  color: var(--light-color);
-  font-size: 1.5rem;
-  line-height: 2;
-  padding: 1rem 0;
+.books-slider img:hover {
+  transform: scale(0.9);
+}
+
+/* Pagination bullet styles (optional) */
+.books-slider .swiper-pagination-bullet {
+  background: white;
+}
+
+.books-slider .swiper-pagination-bullet-active {
+  background: rgb(200, 200, 200);
 }
 
 .icons-container {
@@ -397,7 +403,7 @@ form button:hover {
 
 .featured .featured-slider .box {
   width: 25rem;
-  margin: 2rem 0;
+  margin: 3.5rem 0;
   position: relative;
   overflow: hidden;
   border:var(--border);
@@ -808,13 +814,13 @@ form button:hover {
 
   }
 
-  /* START YOUR REVISION FROM HERE */
+
   .home .row .content {
     text-align: center;
   }
 
   .home .row .content h3 {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
 
   .newsletter {

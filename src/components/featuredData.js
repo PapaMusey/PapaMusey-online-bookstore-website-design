@@ -30,5 +30,4 @@ const feauredData = [
         realPrice: "$20.99",
     },
 ]
-
 export default feauredData
