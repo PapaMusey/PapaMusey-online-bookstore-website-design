@@ -3,6 +3,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
+import { Autoplay } from 'swiper/modules';
+
 
 export default function Home() {
   return (
@@ -19,16 +21,17 @@ export default function Home() {
         <div className='books-slider'>
           <Swiper
             loop={true}
-            autoplay={{ delay: 3000, disableOnInteraction: false }}
-            centeredSlides={false}  
+            autoplay={{ delay: 2200, disableOnInteraction: false }}
+            speed={1500}
             pagination={{ clickable: true }}
-            spaceBetween={20}  
+            spaceBetween={20}
+            centeredSlides={true}
             breakpoints={{
-              0: { slidesPerView: 1 },
-              768: { slidesPerView: 2 },
-              1024: { slidesPerView: 3 },
+              0: { slidesPerView: 1, centeredSlides: true },
+              768: { slidesPerView: 2, centeredSlides: false },
+              1024: { slidesPerView: 3, centeredSlides: false },
             }}
-            modules={[Pagination]}
+            modules={[Pagination, Autoplay]}
             className="swiper-container"
           >
             <SwiperSlide><img src='image/book-image1.jpg' alt='Book 1' /></SwiperSlide>

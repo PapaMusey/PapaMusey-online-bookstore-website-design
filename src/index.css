@@ -326,9 +326,12 @@ form button:hover {
 .home .row .content{
   flex: 1 1 42rem;
   font-size: 1.6rem;
+  text-align: left;
 }
+
 .home .row .content h3{
-  font-size: 2.2rem;
+  font-size: 2.5rem;
+  color: var(--black);
  }
 
 .home .row .content p{
@@ -336,23 +339,28 @@ form button:hover {
  font-size: 1.6rem;
 }
 
-
 .home .row .books-slider {
-  flex: 1 1 42rem;
+  flex: 1 1 42rem;;
   display: flex;
-  justify-content: center; /* Centers the Swiper */
-  align-items: center;
+  justify-content: flex-end;
+    align-items: center;
   margin-top: 2rem;
   max-width: 100%;
 }
 
-/* Ensure Swiper container does not cause overflow */
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+
 .books-slider .swiper {
   width: 100%;
-  max-width: 600px; /* Adjust based on layout */
+  max-width:  600px; 
 }
 
 .books-slider img {
+  display: block;
+  margin: 0 auto;
   height: 25rem;
   width: auto;
   object-fit: cover;
@@ -375,7 +383,7 @@ form button:hover {
 .icons-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .icons-container .icons {
@@ -391,7 +399,7 @@ form button:hover {
 }
 
 .icons-container .icons h3 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: var(--black);
   padding-bottom: .5rem;
 }
@@ -401,12 +409,26 @@ form button:hover {
   color: var(--light-color);
 }
 
+.featured {
+  text-align: center;
+}
+
+.featured .swiper-container {
+  display: flex;
+  justify-content: center;
+}
+
+.featured .swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+
 .featured .featured-slider .box {
   width: 25rem;
-  margin: 3.5rem 0;
+  margin: 3.5rem auto; /* Ensures centering on all screens */
   position: relative;
   overflow: hidden;
-  border:var(--border);
+  border: var(--border);
   text-align: center;
 }
 
@@ -415,10 +437,10 @@ form button:hover {
 }
 
 .featured .featured-slider .box:hover .image {
-   /* transform: translateY(6rem); */
+  /* transform: translateY(6rem); */
 }
 
-.featured .featured-slider .box image {
+.featured .featured-slider .box .image { /* Fixed selector */
   padding: 1rem;
   background: linear-gradient(15deg, #eee 30%, #fff 30.1%);
 }
@@ -476,30 +498,12 @@ form button:hover {
 }
 
 
-
-/* .swiper-button-next,
-.swiper-button-prev {
-  border: var(--border-hover);
-  height: 4rem;
-  width: 4rem;
-  color: var(--black);
-  background: #fff;
-}
-.swiper-button-next::after,
-.swiper-button-prev::before{
-  font-size: 2rem;
-}
-.swiper-button-next:hover,
-.swiper-button-prev:hover{
-  background: var(--black);
-  color: #fff;
-} */
-
 .newsletter {
-  /* background: url() no-repeat; */
+  background: url("/public//image/woman-with-book-sofa.jpg") no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  /* height: 400px; */
 }
 
 .newsletter form {
@@ -511,8 +515,7 @@ form button:hover {
 
 .newsletter form h3 {
   font-size: 2.2rem;
-  /* color: #fff; CHANGE THIS TO WHITE AFTER DOWNLOADING
-  THE IMAGE*/
+  color: #fff; 
   padding-bottom: .7rem;
   font-weight: normal;
 }
@@ -604,12 +607,35 @@ form button:hover {
   line-height: 2;
 }
 
+.reviews {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reviews .reviews-slider {
+  width: 100%;  
+  max-width: 1200px;  
+  padding: 20px 0;  
+}
+
+.reviews .swiper-wrapper {
+  gap: 20px !important; 
+}
+
+.reviews .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .reviews .reviews-slider .box {
-  width: 30rem;
+  width: 100%; 
+  max-width: 30rem;  
   border: var(--border);
   padding: 2rem;
   text-align: center;
-  margin: 2rem;
 }
 
 .reviews .reviews-slider .box:hover {
@@ -639,10 +665,41 @@ form button:hover {
   color: var(--green);
 }
 
+
+.blog {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.blog .blog-slider {
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px 0;
+}
+
+.blog .swiper-wrapper {
+  gap: 20px !important;
+}
+
+.blog .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .blog .blog-slider .box {
-  margin: 2rem 0;
-  width: 30rem;
+  width: 100%;
+  max-width: 30rem;
   border: var(--border);
+  padding: 2rem;
+  text-align: center;
+}
+
+.blog .blog-slider .box:hover .image img {
+  transform: scale(1.1);
 }
 
 .blog .blog-slider .box .image {
@@ -657,10 +714,6 @@ form button:hover {
   object-fit: cover;
 }
 
-.blog .blog-slider .box:hover .image img {
-  transform: scale(1.1);
-}
-
 .blog .blog-slider .box .content {
   padding: 1.5rem;
 }
@@ -668,14 +721,16 @@ form button:hover {
 .blog .blog-slider .box .content h3 {
   font-size: 2.2rem;
   color: var(--black);
-  padding-bottom: .5rem;
+  padding-bottom: 0.5rem;
 }
-.blog .blog-slider .box .content p{
+
+.blog .blog-slider .box .content p {
   font-size: 1.4rem;
   color: var(--light-color);
   padding: 1rem 0;
   line-height: 2;
 }
+
 .footer .box-container{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
@@ -830,6 +885,9 @@ form button:hover {
   .newsletter form {
     margin-left: 0;
     max-width: 100%;
+  }
+  .reviews .swiper-wrapper {
+    gap: 20px !important;
   }
 
 }

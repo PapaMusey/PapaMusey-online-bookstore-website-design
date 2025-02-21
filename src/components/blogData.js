@@ -14,7 +14,7 @@ export const blogData = [
     {
         id: 3,
         image: "",
-        blogTitle: "How develop interest in reading",
+        blogTitle: "New Article",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et hendrerit erat, eget finibus turpis. Etiam purus lorem, ornare vitae mauris id, interdum lobortis ligula. Nam sed mi tellus."
     },
     {

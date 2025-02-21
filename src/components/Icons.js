@@ -32,7 +32,6 @@ export default function Icons() {
                 <p>Call us anytime</p>
                 </div>
             </div>
-
         </section>
     )
 }
