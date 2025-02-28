@@ -499,7 +499,7 @@ form button:hover {
 
 
 .newsletter {
-  background: url("/public//image/woman-with-book-sofa.jpg") no-repeat;
+  background: url("/public/image/woman-with-book-sofa.jpg") no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -642,9 +642,11 @@ form button:hover {
   border: var(--border-hover);
 }
 
-.reviews .reviews-slider .box .img {
+.reviews .reviews-slider .box img {
   height: 7rem;
   width: 7rem;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .reviews .reviews-slider .box h3 {

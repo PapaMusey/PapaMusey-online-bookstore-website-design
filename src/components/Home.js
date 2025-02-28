@@ -34,10 +34,10 @@ export default function Home() {
             modules={[Pagination, Autoplay]}
             className="swiper-container"
           >
-            <SwiperSlide><img src='image/book-image1.jpg' alt='Book 1' /></SwiperSlide>
-            <SwiperSlide><img src='image/habits-of-highly-effective-people.jpg' alt='Book 2' /></SwiperSlide>
-            <SwiperSlide><img src='image/power-of-character-in-leadership.jpg' alt='Book 3' /></SwiperSlide>
-            <SwiperSlide><img src='image/the-mind-of-the-leader.jpg' alt='Book 4' /></SwiperSlide>
+            <SwiperSlide><img src='image/book-images/book-image1.jpg' alt='Book 1' /></SwiperSlide>
+            <SwiperSlide><img src='image/book-images/habits-of-highly-effective-people.jpg' alt='Book 2' /></SwiperSlide>
+            <SwiperSlide><img src='image/book-images/power-of-character-in-leadership.jpg' alt='Book 3' /></SwiperSlide>
+            <SwiperSlide><img src='image/book-images/the-mind-of-the-leader.jpg' alt='Book 4' /></SwiperSlide>
           </Swiper>
         </div>
       </div>
