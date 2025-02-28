@@ -11,13 +11,13 @@ export default function Reviews() {
         <section id='reviews' className='reviews'>
             <h1 className='heading'><span>Client's Reviews</span></h1>
             <Swiper
-                spaceBetween={20}  // ✅ Added spacing to prevent overlap
+                spaceBetween={20}  
                 loop={true}
                 autoplay={{ delay: 3000, disableOnInteraction: false }}
                 speed={2000}
                 breakpoints={{
-                    0: { slidesPerView: 2 },  // ✅ Show 2 cards on <768px
-                    768: { slidesPerView: 3 }, // ✅ Show 3 cards on >=768px
+                    0: { slidesPerView: 2 },  
+                    768: { slidesPerView: 3 }, 
                 }}
                 modules={[Autoplay]}
                 className="reviews-slider"

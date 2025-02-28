@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
 import Nav from './components/Nav.js';
 import BottomNav from './components/BottomNav.js';
@@ -9,18 +9,23 @@ import Featured from './components/Featured.js';
 import Newsletter from './components/Newsletter.js';
 import Arrivals from './components/Arrivals.js';
 import Deal from './components/Deal.js';
-import Reviews from './components/Reviews.js'
+import Reviews from './components/Reviews.js';
 import Blog from './components/Blog.js';
 import Footer from './components/Footer.js';
 import Loader from './components/Loader.js';
 
-
 function App() {
+  const [login, setLogin] = useState(false);
+
+  function handleLogin() {
+    setLogin(prevLogin => !prevLogin);
+  }
+
   return (
     <>
-      <Nav />
+      <Nav handleLogin={handleLogin} />
       <BottomNav />
-      <Login />
+      {login && <Login handleLogin={handleLogin} />}
       <Home />
       <Icons />
       <Featured />

@@ -229,20 +229,20 @@ form button:hover {
   background: var(--dark-color);
 }
 
-.login-form-conatiner {
+.login-form-container {
   display: flex;
   align-items: center;
   justify-content: center;
   background: rgba(255, 255, 255, .9);
   position: fixed;
-  top: -105%;
+  top: 0%;
   left: 0;
   z-index: 10000;
   height: 100%;
   width: 100%;
 }
 
-.login-form-conatiner form {
+.login-form-container form {
   background: #fff;
   border: var(--border);
   width: 40rem;
@@ -252,20 +252,20 @@ form button:hover {
   margin: 2rem;
 }
 
-.login-form-conatiner form h3 {
+.login-form-container form h3 {
   font-size: 2.5rem;
   text-transform: uppercase;
   color: var(--black);
   text-align: center;
 }
 
-.login-form-conatiner form span {
+.login-form-container form span {
   display: block;
   font-size: 1.5rem;
   padding-top: 1rem;
 }
 
-.login-form-conatiner form .box {
+.login-form-container form .box {
   width: 100%;
   margin: .7rem 0;
   font-size: 1.6rem;
@@ -276,31 +276,31 @@ form button:hover {
   text-transform: none;
 }
 
-.login-form-conatiner form .checkbox {
+.login-form-container form .checkbox {
   display: flex;
   align-items: center;
   gap: .5rem;
   padding: 1rem 0;
 }
 
-.login-form-conatiner form .checkbox label {
+.login-form-container form .checkbox label {
   font-size: 1.5rem;
   color: var(--light-color);
   cursor: pointer;
 }
 
-.login-form-conatiner form button {
+.login-form-container form button {
   text-align: center;
   width: 100%;
   margin: 1.5rem 0;
 }
 
-.login-form-conatiner form p a {
+.login-form-container form p a {
   color: var(--green);
   text-decoration: underline;
 }
 
-.login-form-conatiner #close-login-btn {
+.login-form-container #close-login-btn {
   position: absolute;
   top: 1.5rem;
   right: 2.5rem;
@@ -330,7 +330,7 @@ form button:hover {
 }
 
 .home .row .content h3{
-  font-size: 2.5rem;
+  font-size: 4rem;
   color: var(--black);
  }
 
@@ -787,6 +787,7 @@ form button:hover {
 .footer .credit span{
   color: var(--green);
 }
+
 /* .loader-container{
   position: fixed;
   top: 0; left: 0;
@@ -866,16 +867,14 @@ form button:hover {
 
   .header .header-1 .search-form.active {
     top: 115%;
-
   }
-
 
   .home .row .content {
     text-align: center;
   }
 
   .home .row .content h3 {
-    font-size: 3rem;
+    font-size: 4rem;
   }
 
   .newsletter {
@@ -889,7 +888,6 @@ form button:hover {
   .reviews .swiper-wrapper {
     gap: 20px !important;
   }
-
 }
 
 
