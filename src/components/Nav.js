@@ -37,7 +37,7 @@ export default function Nav({ handleLogin }) {
         <>
             <header className="header">
                 <div className='header-1'>
-                    <a href='#' className='logo'><i className='fas fa-book'></i>Bookly</a>
+                    <a href='#' onClick={(e) => e.preventDefault()} className='logo'><i className='fas fa-book'></i>Bookly</a>
 
                     <form className={searchbar ? "search-form active" : "search-form"}>
                         <div className='input'>
@@ -54,8 +54,8 @@ export default function Nav({ handleLogin }) {
 
                     <div className='icons'>
                         <div onClick={toggleSearchbar} id='search-btn' className="fas fa-search"></div>
-                        <a href='#' className='fas fa-heart'></a>
-                        <a href='#' className='fas fa-shopping-cart'></a>
+                        <a href='#' onClick={(e) => e.preventDefault()} className='fas fa-heart'></a>
+                        <a href='#' onClick={(e) => e.preventDefault()} className='fas fa-shopping-cart'></a>
                         <div onClick={handleLogin} id='log-in-btn' className='fas fa-user'></div>
                     </div>
                 </div>
@@ -66,7 +66,7 @@ export default function Nav({ handleLogin }) {
                         <a href='#featured'>Featured</a>
                         <a href='#arrivals'>Arrivals</a>
                         <a href='#reviews'>Reviews</a>
-                        <a href='#contact'>Contact</a>
+                        <a href='#footer'>Contact</a>
                     </nav>
                 </div>
             </header>

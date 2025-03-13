@@ -6,9 +6,9 @@ export default function FeaturedBook({featuredbookImage, discountedPrice, realPr
             <div className='wrapper'>
                 <div className='box'>
                     <div className='icons'>
-                        <a href='#' className='fas fa-search'></a>
-                        <a href='#' className='fas fa-heart'></a>
-                        <a href='#' className='fas fa-eye'></a>
+                        <a href='#' onClick={(e) => e.preventDefault()} className='fas fa-search'></a>
+                        <a href='#' onClick={(e) => e.preventDefault()} className='fas fa-heart'></a>
+                        <a href='#' onClick={(e) => e.preventDefault()} className='fas fa-eye'></a>
                     </div>
                     <div className='image'>
                         <img src={featuredbookImage} alt='' />

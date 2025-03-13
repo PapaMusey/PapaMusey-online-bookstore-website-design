@@ -4,7 +4,7 @@ export default function ArrivalsCard({bookImage, discountedPrice, realPrice}) {
   return (
     <div className='arrivals-slider'>
                 <div className='wrapper'>
-                    <a href='#' className='box'>
+                    <a href='#' onClick={(e) => e.preventDefault()}  className='box'>
                         <div className='image'>
                             <img src={bookImage} alt='' />
                         </div>
