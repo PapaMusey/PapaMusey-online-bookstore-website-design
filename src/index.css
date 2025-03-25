@@ -43,7 +43,7 @@ html {
   scroll-behavior: smooth;
 }
 
-html::-webkit-scrollbar {
+html::-webkit-scrollbar {      
   width: 1rem
 }
 
@@ -85,7 +85,6 @@ section {
   border: var(--border);
 }
 
-/* form button was the previous name, check again */
 button {
   margin-top: 1rem;
   display: inline-block;
@@ -129,17 +128,14 @@ form button:hover {
   background: #fff;
   display: flex;
   align-items: center;
-  /* Vertically center all items */
   justify-content: space-between;
   border-radius: .5rem;
 }
 
 .header .header-1 .search-form .input {
   display: flex;
-  /* Align items within the .input container */
   align-items: center;
   width: 100%;
-  /* This ensures the .input container takes full width */
 }
 
 .header .header-1 .search-form input {
@@ -371,7 +367,6 @@ form button:hover {
   transform: scale(0.9);
 }
 
-/* Pagination bullet styles (optional) */
 .books-slider .swiper-pagination-bullet {
   background: white;
 }
@@ -425,7 +420,7 @@ form button:hover {
 
 .featured .featured-slider .box {
   width: 25rem;
-  margin: 3.5rem auto; /* Ensures centering on all screens */
+  margin: 3.5rem auto; 
   position: relative;
   overflow: hidden;
   border: var(--border);
@@ -436,11 +431,7 @@ form button:hover {
   border: var(--border-hover);
 }
 
-.featured .featured-slider .box:hover .image {
-  /* transform: translateY(6rem); */
-}
-
-.featured .featured-slider .box .image { /* Fixed selector */
+.featured .featured-slider .box .image { 
   padding: 1rem;
   background: linear-gradient(15deg, #eee 30%, #fff 30.1%);
 }
@@ -497,13 +488,11 @@ form button:hover {
   text-decoration: line-through;
 }
 
-
 .newsletter {
   background: url("/public/image/woman-with-book-sofa.jpg") no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  /* height: 400px; */
 }
 
 .newsletter form {
@@ -667,7 +656,6 @@ form button:hover {
   color: var(--green);
 }
 
-
 .blog {
   text-align: center;
   display: flex;
@@ -758,8 +746,6 @@ form button:hover {
   width: 100%;
 }
 .footer .share{
-  /* display: flex;
-  justify-content: center; */
   padding: 1rem 0;
   text-align: center;
   width: 90vw;
@@ -789,29 +775,6 @@ form button:hover {
 .footer .credit span{
   color: var(--green);
 }
-
-/* .loader-container{
-  position: fixed;
-  top: 0; left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: 10000;
-  background: #f7f7f7;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.loader-container img{
-  height: 10rem;
-} */
-
-
-
-
-
-
-
-
 
 
 
