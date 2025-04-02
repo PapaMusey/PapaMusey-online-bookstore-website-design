@@ -5,7 +5,7 @@ export default function ReviewsCard({ name, image, review }) {
         <div className='reviews-slider'>
             <div className='wrap'>
                 <div className='box'>
-                    <img src={image} alt='' />
+                    <img src={image} alt='client-image' loading='lazy'/>
                     <h3>{name}</h3>
                     <p>{review}</p>
                     <div className='stars'>

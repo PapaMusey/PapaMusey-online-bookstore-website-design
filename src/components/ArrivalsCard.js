@@ -6,7 +6,7 @@ export default function ArrivalsCard({bookImage, discountedPrice, realPrice}) {
                 <div className='wrapper'>
                     <a href='#' onClick={(e) => e.preventDefault()}  className='box'>
                         <div className='image'>
-                            <img src={bookImage} alt='' />
+                            <img src={bookImage} alt='book-image' loading='lazy' />
                         </div>
                         <div className='content'>
                             <h3>New Arrivals</h3>

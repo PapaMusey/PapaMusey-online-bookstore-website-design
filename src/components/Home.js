@@ -2,7 +2,6 @@ import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import { Pagination } from 'swiper/modules';
 import { Autoplay } from 'swiper/modules';
 
 
@@ -31,7 +30,7 @@ export default function Home() {
               768: { slidesPerView: 2, centeredSlides: false },
               1024: { slidesPerView: 3, centeredSlides: false },
             }}
-            modules={[Pagination, Autoplay]}
+            modules={[ Autoplay]}
             className="swiper-container"
           >
             <SwiperSlide><img src='image/book-images/book-image1.jpg' alt='Book 1' /></SwiperSlide>

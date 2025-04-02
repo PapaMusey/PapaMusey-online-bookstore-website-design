@@ -8,7 +8,7 @@ import { Autoplay, Grid } from 'swiper/modules';
 
 export default function Arrivals() {
     return (
-        <section className='arrivals' id="arrivals">
+<section className='arrivals' id="arrivals">
             <h1 className='heading'>
                 <span>New Arrivals</span>
             </h1>
@@ -16,10 +16,10 @@ export default function Arrivals() {
                 spaceBetween={20} 
                 slidesPerView={2} 
                 grid={{ rows: 2, fill: "row" }} 
-                loop={true}
+                loop={false}
                 autoplay={{ delay: 3000, disableOnInteraction: false }} 
                 speed={2000}
-                modules={[Grid, Autoplay]} 
+                 modules={[Grid, Autoplay]} 
                 className="arrivals-slider"
             >
                 {arrivalsData.map((arrivalcard) => (
@@ -29,6 +29,5 @@ export default function Arrivals() {
                     </SwiperSlide>
                 ))}
             </Swiper>
-        </section>
-    )
+        </section>    )
 }
