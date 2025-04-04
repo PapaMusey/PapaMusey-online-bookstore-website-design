@@ -45,7 +45,7 @@ export default function Nav({ handleLogin }) {
                                 type="search"
                                 placeholder='Search'
                                 onChange={handleChange}
-                                name="search-box"
+                                name="search"
                                 value={query.search}
                             />
                             <div id='search-btn' className='fas fa-search'></div>
