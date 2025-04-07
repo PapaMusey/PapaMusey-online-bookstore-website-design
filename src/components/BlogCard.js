@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function BlogCard({image, blogTitle, description }) {
     return (
-        <div className='blog-slider'> {/*THIS IS SUPPOSE TO FUNCTION FOR THE SLIDER */}
+        <div className='blog-slider'>
             <div className='wrapper'>
                 <div className='box'>
                     <div className='image'>

@@ -19,8 +19,8 @@ export default function Featured() {
                 centeredSlides={true}
                 navigation
                 pagination={{ clickable: true }}
-                // autoplay={{ delay: 2200, disableOnInteraction: false }}
-                // speed={1500}    
+                autoplay={{ delay: 2200, disableOnInteraction: false }}
+                speed={1500}    
                 breakpoints={{
                     0: { slidesPerView: 1, centeredSlides: true },
                     768: { slidesPerView: 2, centeredSlides: true },

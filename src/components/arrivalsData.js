@@ -31,7 +31,7 @@ const arrivalsData = [
     },
     {
         id: 6,
-        bookImage: "image/book-images/clean-air-book.webp",
+        bookImage: "image/book-images/clean-air-book.jpg",
         discountedPrice: "$9.99",
         realPrice: "$15.50",
     },

@@ -13,10 +13,6 @@ export default function Deal() {
                 <button>shop now</button>
             </div>
 
-            <div className='image'>
-                <img src='' alt='' />
-            </div>
-
         </section>
     )
 }

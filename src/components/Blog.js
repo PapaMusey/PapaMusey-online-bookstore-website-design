@@ -10,10 +10,6 @@ export default function Blog() {
         <section className='blog' id='blog'>
             <h1 className='heading'><span>our blog</span></h1>
             <Swiper
-                // spaceBetween={}
-                // loop={true}
-                // autoplay={{ delay: 3000, disableOnInteraction: false }}
-                // speed={2000}
                 breakpoints={{
                     0: { slidesPerView: 1, spaceBetween: 10 },   
                     768: { slidesPerView: 2, spaceBetween: 15 },  

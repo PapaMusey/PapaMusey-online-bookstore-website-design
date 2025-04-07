@@ -12,7 +12,6 @@ import Deal from './components/Deal.js';
 import Reviews from './components/Reviews.js';
 import Blog from './components/Blog.js';
 import Footer from './components/Footer.js';
-import Loader from './components/Loader.js';
 
 function App() {
   const [login, setLogin] = useState(false);
@@ -35,7 +34,6 @@ function App() {
       <Reviews />
       <Blog />
       <Footer />
-      <Loader />
     </>
   );
 }

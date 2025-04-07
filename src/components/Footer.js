@@ -33,7 +33,6 @@ export default function Footer() {
                     <a href="#" onClick={(e) => e.preventDefault()}><i className='fas fa-phonet'></i>+123-456-7890</a>
                     <a href="#" onClick={(e) => e.preventDefault()}><i className='fas fa-phone'></i>+111-222-3333</a>
                     <a href="#" onClick={(e) => e.preventDefault()}><i className='fas fa-envelope'></i>kojaxn@gmail.com</a>
-                    <img src='' alt='' className='map'/>
                 </div>
                 <div className='share'>
                     <a href='#' onClick={(e) => e.preventDefault()} className='fab fa-facebook'></a>
