@@ -868,3 +868,11 @@ form button:hover {
   }
 
 }
+
+@media (prefers-reduced-motion) {
+  .swiper-slide {
+    transition: none !important;
+    animation: none !important;
+    scroll-behavior: auto !important;
+  }
+}
